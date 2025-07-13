@@ -89,8 +89,8 @@ module Stripe
 
 
 
-    @[JSON::Field(key: "file", type: Stripe::::File?, default: nil, required: false, nullable: true, emit_null: true, presence: true, ignore_serialize: file.nil? && !file_present?)]
-    getter file : Stripe::::File? = nil
+    @[JSON::Field(key: "file", type: Stripe::File?, default: nil, required: false, nullable: true, emit_null: true, presence: true, ignore_serialize: file.nil? && !file_present?)]
+    getter file : Stripe::File? = nil
 
     @[JSON::Field(ignore: true)]
     property? file_present : Bool = false
@@ -112,7 +112,7 @@ module Stripe
       @title : String? = nil,
       # Optional properties
       @error : Stripe::SigmaScheduledQueryRunError? = nil,
-      @file : Stripe::::File? = nil
+      @file : Stripe::File? = nil
     )
     end
 
@@ -342,7 +342,7 @@ module Stripe
     end
     # Custom attribute writer method checking allowed values (enum).
     # @param [Object] file Object to be assigned
-    def file=(new_value : Stripe::::File?)
+    def file=(new_value : Stripe::File?)
 
       unless new_value.nil?
         new_value.validate if new_value.is_a?(OpenApi::Validatable)

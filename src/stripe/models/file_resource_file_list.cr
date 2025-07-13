@@ -19,8 +19,8 @@ module Stripe
 
     # Required Properties
 
-    @[JSON::Field(key: "data", type: Array(Stripe::::File)?, default: nil, required: true, nullable: false, emit_null: false)]
-    getter data : Array(Stripe::::File)? = nil
+    @[JSON::Field(key: "data", type: Array(Stripe::File)?, default: nil, required: true, nullable: false, emit_null: false)]
+    getter data : Array(Stripe::File)? = nil
 
 
 
@@ -52,7 +52,7 @@ module Stripe
     def initialize(
       *,
       # Required properties
-      @data : Array(Stripe::::File)? = nil, 
+      @data : Array(Stripe::File)? = nil, 
       @has_more : Bool? = nil, 
       @object : String? = nil, 
       @url : String? = nil
@@ -121,7 +121,7 @@ module Stripe
 
     # Custom attribute writer method checking allowed values (enum).
     # @param [Object] data Object to be assigned
-    def data=(new_value : Array(Stripe::::File)?)
+    def data=(new_value : Array(Stripe::File)?)
 
       raise ArgumentError.new("\"data\" is required and cannot be null") if new_value.nil?
       unless new_value.nil?

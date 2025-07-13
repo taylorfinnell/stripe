@@ -79,8 +79,8 @@ module Stripe
     property? error_present : Bool = false
 
 
-    @[JSON::Field(key: "result", type: Stripe::::File?, default: nil, required: false, nullable: true, emit_null: true, presence: true, ignore_serialize: result.nil? && !result_present?)]
-    getter result : Stripe::::File? = nil
+    @[JSON::Field(key: "result", type: Stripe::File?, default: nil, required: false, nullable: true, emit_null: true, presence: true, ignore_serialize: result.nil? && !result_present?)]
+    getter result : Stripe::File? = nil
 
     @[JSON::Field(ignore: true)]
     property? result_present : Bool = false
@@ -108,7 +108,7 @@ module Stripe
       @status : String? = nil,
       # Optional properties
       @error : String? = nil,
-      @result : Stripe::::File? = nil,
+      @result : Stripe::File? = nil,
       @succeeded_at : Int32? = nil
     )
     end
@@ -308,7 +308,7 @@ module Stripe
     end
     # Custom attribute writer method checking allowed values (enum).
     # @param [Object] result Object to be assigned
-    def result=(new_value : Stripe::::File?)
+    def result=(new_value : Stripe::File?)
 
       unless new_value.nil?
         new_value.validate if new_value.is_a?(OpenApi::Validatable)

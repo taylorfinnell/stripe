@@ -181,12 +181,12 @@ module Stripe
     # <p>Retrieves the details of an existing file object. After you supply a unique file ID, Stripe returns the corresponding file object. Learn how to <a href=\"/docs/file-upload#download-file-contents\">access file contents</a>.</p>
     # @required @param file [String?]
     # @optional @param expand [Array(Array(String))?] Specifies which fields in the response should be expanded.
-    # @return [Stripe::::File]
+    # @return [Stripe::File]
     def get_files_file(
       *, 
       file : String? = nil, 
       expand : Array(Array(String))? = nil
-    ) : Stripe::::File
+    ) : Stripe::File
       data, _status_code, _headers = get_files_file_with_http_info(file: file, expand: expand)
       data
     end
@@ -195,12 +195,12 @@ module Stripe
     # &lt;p&gt;Retrieves the details of an existing file object. After you supply a unique file ID, Stripe returns the corresponding file object. Learn how to &lt;a href&#x3D;\&quot;/docs/file-upload#download-file-contents\&quot;&gt;access file contents&lt;/a&gt;.&lt;/p&gt;
     # @required @param file [String?]
     # @optional @param expand [Array(Array(String))?] Specifies which fields in the response should be expanded.
-    # @return [Tuple(Stripe::::File, Integer, Hash)] Stripe::::File, response status code and response headers
+    # @return [Tuple(Stripe::File, Integer, Hash)] Stripe::File, response status code and response headers
     def get_files_file_with_http_info(
       *, 
       file : String? = nil, 
       expand : Array(Array(String))? = nil
-    ) : Tuple(Stripe::::File, Int32, Hash(String, Array(String) | String))
+    ) : Tuple(Stripe::File, Int32, Hash(String, Array(String) | String))
       request = build_api_request_for_get_files_file(file: file, expand: expand)
 
       body, status_code, headers = @api_client.execute_api_request(request)
@@ -209,7 +209,7 @@ module Stripe
         Log.debug { "API called: FilesApi#get_files_file\nBody: #{body.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}" }
       end
 
-      Tuple.new(Stripe::::File.from_json(body), status_code, headers)
+      Tuple.new(Stripe::File.from_json(body), status_code, headers)
     end
 
     # Retrieve a file
@@ -289,14 +289,14 @@ module Stripe
     # @required @param purpose [String?] The [purpose](https://stripe.com/docs/file-upload#uploading-a-file) of the uploaded file.
     # @optional @param expand [Array(String)?] Specifies which fields in the response should be expanded.
     # @optional @param file_link_data [Stripe::FileLinkCreationParams?]
-    # @return [Stripe::::File]
+    # @return [Stripe::File]
     def post_files(
       *, 
       file : ::File? = nil, 
       purpose : String? = nil, 
       expand : Array(String)? = nil, 
       file_link_data : Stripe::FileLinkCreationParams? = nil
-    ) : Stripe::::File
+    ) : Stripe::File
       data, _status_code, _headers = post_files_with_http_info(file: file, purpose: purpose, expand: expand, file_link_data: file_link_data)
       data
     end
@@ -307,14 +307,14 @@ module Stripe
     # @required @param purpose [String?] The [purpose](https://stripe.com/docs/file-upload#uploading-a-file) of the uploaded file.
     # @optional @param expand [Array(String)?] Specifies which fields in the response should be expanded.
     # @optional @param file_link_data [Stripe::FileLinkCreationParams?]
-    # @return [Tuple(Stripe::::File, Integer, Hash)] Stripe::::File, response status code and response headers
+    # @return [Tuple(Stripe::File, Integer, Hash)] Stripe::File, response status code and response headers
     def post_files_with_http_info(
       *, 
       file : ::File? = nil, 
       purpose : String? = nil, 
       expand : Array(String)? = nil, 
       file_link_data : Stripe::FileLinkCreationParams? = nil
-    ) : Tuple(Stripe::::File, Int32, Hash(String, Array(String) | String))
+    ) : Tuple(Stripe::File, Int32, Hash(String, Array(String) | String))
       request = build_api_request_for_post_files(file: file, purpose: purpose, expand: expand, file_link_data: file_link_data)
 
       body, status_code, headers = @api_client.execute_api_request(request)
@@ -323,7 +323,7 @@ module Stripe
         Log.debug { "API called: FilesApi#post_files\nBody: #{body.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}" }
       end
 
-      Tuple.new(Stripe::::File.from_json(body), status_code, headers)
+      Tuple.new(Stripe::File.from_json(body), status_code, headers)
     end
 
     # Create a file
