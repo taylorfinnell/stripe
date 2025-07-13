@@ -584,7 +584,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::Invoice,
-      Stripe::String
+      String
       ]
     end
 

@@ -165,7 +165,7 @@ module Stripe
       [
       Stripe::DeletedProduct,
       Stripe::Product,
-      Stripe::String
+      String
       ]
     end
 

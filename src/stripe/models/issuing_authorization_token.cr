@@ -112,7 +112,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::IssuingToken,
-      Stripe::String
+      String
       ]
     end
 

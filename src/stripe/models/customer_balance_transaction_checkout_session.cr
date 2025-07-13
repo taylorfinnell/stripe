@@ -481,7 +481,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::CheckoutSession,
-      Stripe::String
+      String
       ]
     end
 

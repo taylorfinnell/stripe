@@ -58,7 +58,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::NotReceived,
-      Stripe::String
+      String
       ]
     end
 

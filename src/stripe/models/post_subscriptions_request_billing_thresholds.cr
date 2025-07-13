@@ -35,7 +35,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::BillingThresholdsParam,
-      Stripe::String
+      String
       ]
     end
 

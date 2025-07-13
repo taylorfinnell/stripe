@@ -21,7 +21,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::Hash(String, String),
-      Stripe::String
+      String
       ]
     end
 

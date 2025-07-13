@@ -188,7 +188,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::Refund,
-      Stripe::String
+      String
       ]
     end
 

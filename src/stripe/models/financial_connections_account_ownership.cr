@@ -52,7 +52,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::FinancialConnectionsAccountOwnership,
-      Stripe::String
+      String
       ]
     end
 

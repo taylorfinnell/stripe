@@ -186,7 +186,7 @@ module Stripe
       [
       Stripe::DeletedPrice,
       Stripe::Price,
-      Stripe::String
+      String
       ]
     end
 

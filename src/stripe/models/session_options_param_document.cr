@@ -46,7 +46,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::DocumentOptions,
-      Stripe::String
+      String
       ]
     end
 

@@ -226,7 +226,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::Customer,
-      Stripe::String
+      String
       ]
     end
 

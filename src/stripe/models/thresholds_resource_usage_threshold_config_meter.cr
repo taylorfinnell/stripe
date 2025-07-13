@@ -116,7 +116,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::BillingMeter,
-      Stripe::String
+      String
       ]
     end
 

@@ -71,7 +71,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::EntitlementsFeature,
-      Stripe::String
+      String
       ]
     end
 

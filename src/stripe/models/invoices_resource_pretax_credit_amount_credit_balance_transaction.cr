@@ -96,7 +96,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::BillingCreditBalanceTransaction,
-      Stripe::String
+      String
       ]
     end
 

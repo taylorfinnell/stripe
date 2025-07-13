@@ -21,7 +21,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::Int32,
-      Stripe::String
+      String
       ]
     end
 

@@ -150,7 +150,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::Coupon,
-      Stripe::String
+      String
       ]
     end
 

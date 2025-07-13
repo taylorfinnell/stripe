@@ -178,7 +178,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::Price,
-      Stripe::String
+      String
       ]
     end
 

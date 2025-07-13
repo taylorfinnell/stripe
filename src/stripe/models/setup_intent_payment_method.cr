@@ -397,7 +397,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::PaymentMethod,
-      Stripe::String
+      String
       ]
     end
 

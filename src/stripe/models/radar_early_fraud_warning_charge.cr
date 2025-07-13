@@ -356,7 +356,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::Charge,
-      Stripe::String
+      String
       ]
     end
 

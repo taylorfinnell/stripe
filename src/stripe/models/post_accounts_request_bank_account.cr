@@ -86,7 +86,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::ExternalAccountPayoutBankAccount,
-      Stripe::String
+      String
       ]
     end
 

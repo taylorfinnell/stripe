@@ -102,7 +102,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::PaymentIntentPaymentMethodOptionsParam,
-      Stripe::String
+      String
       ]
     end
 

@@ -89,7 +89,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::ClimateProduct,
-      Stripe::String
+      String
       ]
     end
 

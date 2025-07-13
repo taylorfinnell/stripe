@@ -114,7 +114,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::BillingPortalConfiguration,
-      Stripe::String
+      String
       ]
     end
 

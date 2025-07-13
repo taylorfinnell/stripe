@@ -117,7 +117,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::IssuingPersonalizationDesign,
-      Stripe::String
+      String
       ]
     end
 

@@ -32,7 +32,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::ShippingAddressCollectionParams,
-      Stripe::String
+      String
       ]
     end
 

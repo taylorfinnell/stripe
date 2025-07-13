@@ -72,7 +72,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::CustomerPaymentSourceBankAccount,
-      Stripe::String
+      String
       ]
     end
 

@@ -88,7 +88,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::Canceled,
-      Stripe::String
+      String
       ]
     end
 

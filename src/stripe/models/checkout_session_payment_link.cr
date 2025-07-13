@@ -262,7 +262,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::PaymentLink,
-      Stripe::String
+      String
       ]
     end
 

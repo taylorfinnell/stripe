@@ -132,7 +132,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::SetupAttempt,
-      Stripe::String
+      String
       ]
     end
 

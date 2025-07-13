@@ -56,7 +56,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::ServiceNotAsDescribed,
-      Stripe::String
+      String
       ]
     end
 

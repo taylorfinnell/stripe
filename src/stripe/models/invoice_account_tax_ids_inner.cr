@@ -104,7 +104,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::DeletedTaxId,
-      Stripe::String,
+      String,
       Stripe::TaxId
       ]
     end

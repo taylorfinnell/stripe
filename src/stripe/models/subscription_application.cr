@@ -59,7 +59,7 @@ module Stripe
       [
       Stripe::Application,
       Stripe::DeletedApplication,
-      Stripe::String
+      String
       ]
     end
 

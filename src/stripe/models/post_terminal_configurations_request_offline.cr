@@ -30,7 +30,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::Offline,
-      Stripe::String
+      String
       ]
     end
 

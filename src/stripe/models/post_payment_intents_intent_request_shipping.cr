@@ -57,7 +57,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::OptionalFieldsShipping,
-      Stripe::String
+      String
       ]
     end
 

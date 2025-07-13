@@ -75,7 +75,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::IssuingPhysicalBundle,
-      Stripe::String
+      String
       ]
     end
 

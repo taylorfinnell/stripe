@@ -22,7 +22,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::Float64,
-      Stripe::String
+      String
       ]
     end
 

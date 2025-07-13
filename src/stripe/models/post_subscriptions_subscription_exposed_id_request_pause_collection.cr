@@ -39,7 +39,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::PauseCollectionParam,
-      Stripe::String
+      String
       ]
     end
 

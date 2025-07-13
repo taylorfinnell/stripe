@@ -32,7 +32,7 @@ module Stripe
       [
       Stripe::ClientKeyParam,
       Stripe::SecretKeyParam,
-      Stripe::String
+      String
       ]
     end
 

@@ -23,7 +23,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::Array(DiscountsDataParam),
-      Stripe::String
+      String
       ]
     end
 

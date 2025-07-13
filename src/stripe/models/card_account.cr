@@ -177,7 +177,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::Account,
-      Stripe::String
+      String
       ]
     end
 

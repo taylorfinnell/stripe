@@ -39,7 +39,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::PendingInvoiceItemIntervalParams,
-      Stripe::String
+      String
       ]
     end
 

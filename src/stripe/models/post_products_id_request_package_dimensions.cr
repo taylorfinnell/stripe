@@ -45,7 +45,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::PackageDimensionsSpecs,
-      Stripe::String
+      String
       ]
     end
 

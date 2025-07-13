@@ -51,7 +51,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::Application,
-      Stripe::String
+      String
       ]
     end
 

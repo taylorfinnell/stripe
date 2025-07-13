@@ -114,7 +114,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::File,
-      Stripe::String
+      String
       ]
     end
 

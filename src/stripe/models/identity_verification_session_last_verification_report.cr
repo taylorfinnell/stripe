@@ -123,7 +123,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::IdentityVerificationReport,
-      Stripe::String
+      String
       ]
     end
 

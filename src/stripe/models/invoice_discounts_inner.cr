@@ -130,7 +130,7 @@ module Stripe
       [
       Stripe::DeletedDiscount,
       Stripe::Discount,
-      Stripe::String
+      String
       ]
     end
 

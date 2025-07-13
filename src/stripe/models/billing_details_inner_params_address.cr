@@ -60,7 +60,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::BillingDetailsAddress,
-      Stripe::String
+      String
       ]
     end
 

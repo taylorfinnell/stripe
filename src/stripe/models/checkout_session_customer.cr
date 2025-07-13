@@ -234,7 +234,7 @@ module Stripe
       [
       Stripe::Customer,
       Stripe::DeletedCustomer,
-      Stripe::String
+      String
       ]
     end
 

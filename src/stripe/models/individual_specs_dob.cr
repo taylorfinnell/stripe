@@ -39,7 +39,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::DateOfBirthSpecs,
-      Stripe::String
+      String
       ]
     end
 

@@ -355,7 +355,7 @@ module Stripe
       Stripe::Card,
       Stripe::DeletedBankAccount,
       Stripe::DeletedCard,
-      Stripe::String
+      String
       ]
     end
 

@@ -54,7 +54,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::RestrictionsParams,
-      Stripe::String
+      String
       ]
     end
 

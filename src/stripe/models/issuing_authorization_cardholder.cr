@@ -140,7 +140,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::IssuingCardholder,
-      Stripe::String
+      String
       ]
     end
 

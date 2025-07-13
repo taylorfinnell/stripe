@@ -63,7 +63,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::MerchandiseNotAsDescribed,
-      Stripe::String
+      String
       ]
     end
 

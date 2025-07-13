@@ -61,7 +61,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::OptionalFieldsCustomerAddress,
-      Stripe::String
+      String
       ]
     end
 

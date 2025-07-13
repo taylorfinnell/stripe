@@ -124,7 +124,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::ApplicationFee,
-      Stripe::String
+      String
       ]
     end
 

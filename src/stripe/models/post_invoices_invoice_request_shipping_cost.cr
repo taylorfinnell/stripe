@@ -37,7 +37,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::ShippingCost,
-      Stripe::String
+      String
       ]
     end
 

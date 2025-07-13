@@ -38,7 +38,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::NoValidAuthorization,
-      Stripe::String
+      String
       ]
     end
 

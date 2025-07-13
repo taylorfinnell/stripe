@@ -65,7 +65,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::Duplicate,
-      Stripe::String
+      String
       ]
     end
 

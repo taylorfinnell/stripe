@@ -36,7 +36,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::EnhancedEvidence,
-      Stripe::String
+      String
       ]
     end
 

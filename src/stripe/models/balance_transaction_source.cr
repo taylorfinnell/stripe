@@ -868,7 +868,7 @@ module Stripe
       Stripe::Payout,
       Stripe::Refund,
       Stripe::ReserveTransaction,
-      Stripe::String,
+      String,
       Stripe::TaxDeductedAtSource,
       Stripe::Topup,
       Stripe::Transfer,

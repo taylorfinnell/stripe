@@ -260,7 +260,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::CreditNote,
-      Stripe::String
+      String
       ]
     end
 

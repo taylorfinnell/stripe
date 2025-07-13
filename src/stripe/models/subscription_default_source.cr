@@ -543,7 +543,7 @@ module Stripe
       Stripe::BankAccount,
       Stripe::Card,
       Stripe::Source,
-      Stripe::String
+      String
       ]
     end
 

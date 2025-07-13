@@ -592,7 +592,7 @@ module Stripe
       [
       Stripe::DeletedInvoice,
       Stripe::Invoice,
-      Stripe::String
+      String
       ]
     end
 

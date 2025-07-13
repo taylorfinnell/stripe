@@ -22,7 +22,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::Array(TaxAmountWithTaxRateParam),
-      Stripe::String
+      String
       ]
     end
 

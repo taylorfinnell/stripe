@@ -35,7 +35,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::RebootWindow,
-      Stripe::String
+      String
       ]
     end
 

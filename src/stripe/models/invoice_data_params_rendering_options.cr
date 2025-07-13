@@ -31,7 +31,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::CheckoutRenderingOptionsParam,
-      Stripe::String
+      String
       ]
     end
 

@@ -31,7 +31,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::SecretKeyParam,
-      Stripe::String
+      String
       ]
     end
 

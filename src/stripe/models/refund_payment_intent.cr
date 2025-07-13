@@ -311,7 +311,7 @@ module Stripe
     def self.openapi_any_of
       [
       Stripe::PaymentIntent,
-      Stripe::String
+      String
       ]
     end
 
